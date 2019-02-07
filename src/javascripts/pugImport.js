@@ -1,14 +1,8 @@
-import '../pug/index.pug';
-import '../pug/test.pug';
+/**
+ * @file pugをimportするだけのファイル（自動で出力しているので編集しないでください）
+ */
 
-if (module.hot) {
-  module.hot.accept(console.error);
-
-  module.hot.accept(['../pug/index.pug'], () => {
-    console.log('pug change');
-  });
-
-  module.hot.dispose(() => {
-    console.log('dispose');
-  });
-}
+import '../pug/hoge.pug'
+import '../pug/index.pug'
+import '../pug/test.pug'
+import '../pug/日本語.pug'
