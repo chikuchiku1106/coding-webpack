@@ -3,12 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    main: [
-      // 'webpack-dev-server/client?http://localhost:3000',
-      'webpack/hot/dev-server',
-      'webpack-hot-middleware/client',
-      path.resolve(__dirname, './src/javascripts/entry.js')
-    ]
+    main: [path.resolve(__dirname, './src/javascripts/entry.js')]
   },
   output: {
     path: path.resolve(__dirname, './dist'),
