@@ -1,6 +1,5 @@
-import html from '../pug/index.pug';
-
-console.log(html);
+import '../pug/index.pug';
+import '../pug/test.pug';
 
 if (module.hot) {
   module.hot.accept(console.error);
