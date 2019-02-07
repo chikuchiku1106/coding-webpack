@@ -1,14 +1,11 @@
-doctype html
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="apple-mobile-web-app-capable", content="yes")
-    meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
-    link(rel='stylesheet' href='./main.css')
-    title テスト
-  body
-    p test
-    p.test__title タイトル
-    script(src="./js/main.js")
+extends ./templates/layout
+
+block variables
+  -
+    var appId = 'top';  // JSのアプリ起動に使われるID名（使わない場合は空文字）
+    var title = 'トップ';
+    var description = '説明';
+
+block content
+  p test
+  p.test__title タイトル

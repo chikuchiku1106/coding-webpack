@@ -9,7 +9,7 @@ const config = merge(baseConfig, {
   mode: 'production',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: 'css/[name].css'
     })
   ]
 });

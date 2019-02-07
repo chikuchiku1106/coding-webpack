@@ -26,7 +26,7 @@ const config = merge(baseConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: 'css/[name].css'
     })
   ]
 });

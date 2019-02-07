@@ -1,15 +1,13 @@
+extends ./templates/layout
+
 include components/_button
 
-doctype html
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="apple-mobile-web-app-capable", content="yes")
-    meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
-    title テスト
-  body
-    p This is test page.
-    +button
-    script(src="./js/main.js")
+block variables
+  -
+    var appId = 'test';  // JSのアプリ起動に使われるID名（使わない場合は空文字）
+    var title = 'テスト';
+    var description = '説明';
+
+block content
+  p This is test page.
+  +button
