@@ -33,12 +33,3 @@ const server = browserSync({
     }
   ]
 });
-
-const fs = require('fs');
-
-setTimeout(() => {
-  console.log(fs.existsSync('dist/index.html'));
-}, 3000);
-// fs.watch('dist/index.html', () => {
-//   console.log('change');
-// });
