@@ -1,4 +1,5 @@
 import './pugImport';
+import '../css/base.scss';
 
 console.log('test');
 
