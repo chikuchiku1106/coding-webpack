@@ -1,8 +1,8 @@
 /**
- * @file pugをimportするだけのファイル（自動で出力しているので編集しないでください）
+ * @file pugをimportするだけのファイル
  */
 
-import '../pug/hoge.pug'
-import '../pug/index.pug'
-import '../pug/test.pug'
-import '../pug/日本語.pug'
+const req = require.context('../pug/', false, /\.pug/);
+req.keys().forEach((fileName) => {
+  req(fileName);
+});

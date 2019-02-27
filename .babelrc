@@ -3,6 +3,6 @@
     "lodash"
   ],
   "presets": [
-    "env"
+    "@babel/preset-env"
   ]
 }
