@@ -30,11 +30,29 @@ module.exports = {
             options: { name: '[name].html' }
           },
           'extract-loader',
-          'html-loader',
+          {
+            loader: 'html-loader',
+            options: {
+              attrs: ['img:src', ':data-src']
+            }
+          },
           {
             loader: 'pug-html-loader',
             options: {
               pretty: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'materials/',
+              publicPath: (url) => './materials/' + url
             }
           }
         ]
