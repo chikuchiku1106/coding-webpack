@@ -23,6 +23,7 @@ const server = browserSync({
   },
   files: [
     {
+      // pugファイルを更新してもなぜかリロードしてくれないので手動で更新する
       match: ['./src/pug/**/*.pug'],
       fn: (event, file) => {
         webpackDevMiddlewareInstance.waitUntilValid(() => {
