@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.development.js",
-    "server": "node scripts/developEntry.js",
-    "build": "rimraf dist && webpack --config webpack.config.production.js"
+    "start": "node scripts/developEntry.js",
+    "build": "rimraf dist && webpack --config webpack.config.production.js",
+    "dev-server": "webpack-dev-server --config webpack.config.development.js"
   },
-  "author": "",
+  "author": "TakanoriOnuma <ohnhistory@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "reset-css": "^4.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
@@ -38,8 +41,5 @@
     "webpack-dev-server": "^3.1.14",
     "webpack-hot-middleware": "^2.24.3",
     "webpack-merge": "^4.2.1"
-  },
-  "dependencies": {
-    "reset-css": "^4.0.1"
   }
 }
