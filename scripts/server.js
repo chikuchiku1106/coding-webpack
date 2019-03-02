@@ -14,6 +14,8 @@ const webpackDevMiddlewareInstance = webpackDevMiddleware(bundler, {
 });
 
 const server = browserSync({
+  port: 3000,
+  ghostMode: false,
   server: {
     baseDir: 'dist',
     middleware: [
